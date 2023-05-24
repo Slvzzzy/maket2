@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 100px;
+    color: black;
+    background-color: #e1d8d8;
+}
+main {
+    width: 100%;
+    height: 900px;
+    background-color: #e1d8d8;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    color: #ffffff;
+    background-color: #3b2e2e;
+}
+
+#logo {
+    position: absolute;
+    font-size: 30px;
+    font-family: fantasy;
+    color: black;
+    left: 16%;
+    top: 35px;
+    height: 5px;
+    width:30px;
+    text-decoration: none;
+}
+.navbatton {
+    position: absolute;
+    border-bottom: 17px double #333232;
+    border-top: 6px solid #333232;
+    right: 16%;
+    top: 35px;
+    height: 5px;
+    width:30px;
+}
+
+.textcols-item {
+    width: 20%;
+    margin: 30px 70px 0 20px;
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #b29f9f;
+    padding: 0 40px 20px 40px;
+}
+.maneimage {
+    background-repeat: no-repeat;
+    background: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d37088d066b05be3bf314429/wetmin.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 600px;
+
+}
+.blockmain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    margin: 400px 25px 0 25px;
+    text-align: center;
+
+}
+ /*Для ноутбука*/
+@media screen and (max-width: 1200px) {
+    main {
+        height: 900px;
+    }
+    .block {
+        width: 280px;
+        height: 400px;
+    }
+}
+/*Для ноутбука*/
+
+
+/*Для планшета*/
+@media screen and (max-width: 990px) {
+    main {
+        height: 900px;
+    }
+    .block {
+        width: 240px;
+        height: 400px;
+    }
+    }
+/*Для планшета*/
+
+
+/*Для планшета горизонт*/
+    @media screen and (max-width: 890px) {
+
+        main {
+            height: 1500px;
+        }
+        .blockmain {
+            flex-direction: column;
+        }
+        .block {
+            width: 520px;
+            height: 350px;
+            margin: 180px 0 -110px 0;
+        }
+        footer {
+            height: 600px;
+        }
+        .textcols-item {
+            width: 30%;
+        }
+    }
+
+/*Для планшета горизонт*/
+
+/*!*Для телефона*!*/
+        @media screen and (max-width: 580px) {
+            main {
+                height: 1500px;
+            }
+
+            .blockmain {
+                flex-direction: column;
+            }
+
+            .block {
+                width: 380px;
+                height: 350px;
+                margin: 180px 0 -110px 0;
+            }
+
+            footer {
+                height: 600px;
+            }
+            .textcols-item {
+                width: 50%;
+            }
+        }
+/*!*Для телефона*!*/
