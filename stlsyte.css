@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
 }
 header {
     width: 100%;
@@ -24,34 +27,60 @@ footer {
 #logo {
     position: absolute;
     font-size: 30px;
-    font-family: fantasy;
-    color: black;
-    left: 16%;
-    top: 35px;
+    font-family: 'Oswald',sans-serif;
+    color: #332E29;
+    left: 8%;
+    top: 30px;
     height: 5px;
-    width:30px;
+    font-stretch: inherit;
     text-decoration: none;
+    font-weight: 900;
 }
 .navbatton {
     position: absolute;
     border-bottom: 17px double #333232;
     border-top: 6px solid #333232;
-    right: 16%;
+    right: 8%;
     top: 35px;
     height: 5px;
     width:30px;
 }
-
+.textmain {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 85px ;
+}
 .textcols-item {
-    width: 20%;
-    margin: 30px 70px 0 20px;
+    width: 300px;
+    padding: 0 80px 0 0;
+    margin-top: 30px;
+}
+h1 {
+    font-size: 30px;
+    color: #332E29;
+    font-family: 'Oswald',sans-serif;
+}
+h2 {
+    font-size: 18px;
+    color: #DDDBD9;
+    font-family: 'Oswald',sans-serif;
 }
 p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Open Sans',sans-serif;
     font-style: italic;
-    color: #b29f9f;
+    color: #808080;
     padding: 0 40px 20px 40px;
+}
+.svgimg {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 60px auto 0 auto;
 }
 .maneimage {
     background-repeat: no-repeat;
@@ -69,7 +98,7 @@ p {
     align-items: center;
 }
 .block {
-    width: 320px;
+    width: 340px;
     height: 400px;
     background-color: white;
     margin: 400px 25px 0 25px;
@@ -78,12 +107,16 @@ p {
 }
  /*Для ноутбука*/
 @media screen and (max-width: 1200px) {
-    main {
-        height: 900px;
-    }
     .block {
-        width: 280px;
-        height: 400px;
+        width: 272px;
+        height: 340px;
+    }
+    p {
+        padding: 0 25px 10px 25px;
+    }
+    .svgimg {
+        width: 80px;
+        height: 80px;
     }
 }
 /*Для ноутбука*/
@@ -106,47 +139,58 @@ p {
     @media screen and (max-width: 890px) {
 
         main {
-            height: 1500px;
+            height: 1600px;
         }
         .blockmain {
             flex-direction: column;
+            padding-top: 350px;
         }
         .block {
             width: 520px;
             height: 350px;
-            margin: 180px 0 -110px 0;
+            margin: 40px 0 0 0;
         }
         footer {
             height: 600px;
         }
         .textcols-item {
-            width: 30%;
+            width: 300px;
+        }
+        .textmain {
+            flex-direction: column;
         }
     }
 
 /*Для планшета горизонт*/
 
-/*!*Для телефона*!*/
+/*/*Для телефона*/
         @media screen and (max-width: 580px) {
             main {
-                height: 1500px;
+                height: 1600px;
             }
 
             .blockmain {
                 flex-direction: column;
+                padding-top: 350px;
             }
 
             .block {
                 width: 380px;
                 height: 350px;
-                margin: 180px 0 -110px 0;
+                margin: 40px 0 0 0;
             }
 
             footer {
                 height: 600px;
             }
             .textcols-item {
-                width: 50%;
+                width: 350px;
+            }
+            .textmain {
+                flex-direction: column;
+            }
+            .maneimage {
+                width: auto ;
             }
         }
-/*!*Для телефона*!*/
+/*/*Для телефона*/
